@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="description" content="Lista completă de servicii AXIOTECH în Brașov: montaj dashcam și adaptor OBD, actualizare hărți camion iGO/Garmin, resoftare GPS, upgrade SSD și RAM, instalare Windows, camere de supraveghere Wi-Fi și IP."><title>Serviciile mele – AXIOTECH Brașov | Camere auto, GPS, PC, CCTV</title><style>:root{padding-left:0;padding-right:0}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&amp;family=Archivo:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+/* Layout: navy workshop band hero, then a light "bench" area with service sheets laid out like spec cards; contact closes on navy again. */
+:root{
+  --navy:#0f1d3a; --navy-2:#16284d; --amber:#f39a1e; --amber-ink:#b8650a;
+  --bg:#f3f4f7; --surface:#ffffff; --fg:#141a26; --muted:#5a6375; --line:#d9dde6;
+  --on-navy:#e9edf6; --on-navy-muted:#a9b4cc;
+  --f-display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --f-body:"Archivo","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0b1222; --surface:#121c33; --fg:#e7ebf4; --muted:#9aa5bd; --line:#24314f; --amber-ink:#f5a83c; --navy:#08101f; --navy-2:#101b33; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b1222; --surface:#121c33; --fg:#e7ebf4; --muted:#9aa5bd; --line:#24314f; --amber-ink:#f5a83c; --navy:#08101f; --navy-2:#101b33; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:16px;line-height:1.6}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--navy)}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);line-height:1.05;text-wrap:balance;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:4px}
+.eyebrow{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber-ink)}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--navy);color:var(--on-navy);border-bottom:1px solid rgba(255,255,255,.08)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--f-display);font-weight:800;font-size:24px;letter-spacing:.06em}
+.logo svg{flex:none}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:15px}
+nav a{text-decoration:none;color:var(--on-navy-muted)}
+nav a:hover{color:#fff}
+.nav-cta{background:var(--amber);color:#1a1205!important;padding:7px 14px;border-radius:6px;font-weight:600}
+nav a[aria-current="page"]{color:#fff;box-shadow:inset 0 -2px 0 var(--amber)}
+@media (max-width:760px){nav li.hide-m{display:none}nav ul{gap:14px}}
+
+/* hero */
+.hero{background:radial-gradient(1200px 500px at 85% -10%,#1f3a70 0%,transparent 60%),var(--navy);color:var(--on-navy);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding-block:64px 72px}
+.hero h1{font-size:clamp(42px,6.4vw,78px);font-weight:800;text-transform:uppercase;letter-spacing:.01em;color:#fff}
+.hero h1 em{font-style:normal;color:var(--amber)}
+.hero .eyebrow{color:var(--amber)}
+.hero p.lead{font-size:18px;color:var(--on-navy-muted);max-width:52ch;margin:20px 0 28px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:600;text-decoration:none;padding:13px 20px;border-radius:8px;border:2px solid transparent;font-size:16px;cursor:pointer;font-family:var(--f-body)}
+.btn-wa{background:var(--amber);color:#1a1205}
+.btn-wa:hover{background:#ffb043}
+.btn-ghost{border-color:rgba(255,255,255,.25);color:#fff}
+.btn-ghost:hover{border-color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px;font-family:var(--f-mono);font-size:12.5px}
+.chips span{border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:4px 11px;color:var(--on-navy-muted)}
+.gps{position:relative;min-width:0}
+.gps svg{width:100%;max-width:420px;height:auto;display:block;margin-left:auto}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;padding-block:44px 52px}.gps svg{max-width:300px;margin:0 auto}}
+
+/* sections */
+section.block{padding-block:80px}
+.head{display:grid;gap:12px;margin-bottom:40px;max-width:680px}
+.head h2{font-size:clamp(34px,4.4vw,52px);font-weight:700;text-transform:uppercase}
+.head p{color:var(--muted);margin:0}
+
+.services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+@media (max-width:900px){.services{grid-template-columns:1fr}}
+.svc{background:var(--surface);border:1px solid var(--line);border-radius:12px;display:grid;grid-template-rows:auto auto 1fr auto;overflow:hidden;min-width:0}
+.svc-top{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px dashed var(--line);font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.svc-top b{color:var(--amber-ink);font-weight:500}
+.svc-body{padding:22px 20px 6px;display:grid;gap:10px}
+.svc h3{font-size:30px;font-weight:700;text-transform:uppercase}
+.svc p{margin:0;color:var(--muted)}
+.svc ul{list-style:none;margin:0;padding:8px 20px 20px;display:grid;gap:10px}
+.svc li{display:grid;grid-template-columns:18px 1fr;gap:10px;align-items:start}
+.svc li::before{content:"";width:10px;height:10px;margin-top:8px;border:2px solid var(--amber);border-radius:2px}
+.svc-foot{padding:14px 20px;background:color-mix(in srgb,var(--amber) 9%,var(--surface));font-family:var(--f-mono);font-size:12.5px;color:var(--fg);border-top:1px solid var(--line)}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;counter-reset:s;border-top:2px solid var(--fg)}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+.step{padding:22px 20px 8px 0;display:grid;gap:8px;min-width:0}
+.step .n{font-family:var(--f-display);font-weight:800;font-size:56px;line-height:1;color:var(--amber-ink)}
+.step h3{font-size:24px;text-transform:uppercase}
+.step p{margin:0;color:var(--muted)}
+
+/* why */
+.why{background:var(--surface);border-block:1px solid var(--line)}
+.why-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 48px}
+@media (max-width:760px){.why-grid{grid-template-columns:1fr}}
+.why-item{display:grid;grid-template-columns:44px 1fr;gap:16px;align-items:start;padding-block:16px;border-bottom:1px solid var(--line)}
+.why-item svg{width:44px;height:44px}
+.why-item h3{font-size:24px;text-transform:uppercase;margin-bottom:4px}
+.why-item p{margin:0;color:var(--muted)}
+
+/* contact */
+.contact{background:var(--navy);color:var(--on-navy)}
+.contact .head p{color:var(--on-navy-muted)}
+.contact .head h2{color:#fff}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px}
+@media (max-width:860px){.contact-grid{grid-template-columns:1fr}}
+.info{display:grid;gap:18px;align-content:start}
+.info-row{display:grid;gap:4px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.12)}
+.info-row .eyebrow{color:var(--on-navy-muted)}
+.info-row strong{font-size:20px;font-weight:600;color:#fff}
+.copy{display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap}
+.copy button{font:500 12px var(--f-mono);background:transparent;color:var(--amber);border:1px solid var(--amber);border-radius:5px;padding:3px 8px;cursor:pointer}
+form{background:var(--navy-2);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:24px;display:grid;gap:16px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:520px){.row{grid-template-columns:1fr}}
+label{display:grid;gap:6px;font-size:14px;color:var(--on-navy-muted)}
+input,select,textarea{font:inherit;color:#fff;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:11px 12px;width:100%;color-scheme:dark}
+textarea{min-height:110px;resize:vertical}
+select option,select optgroup{background:#16284d;color:#fff}
+select optgroup{color:#f39a1e;font-style:normal}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--amber);outline-offset:1px;border-color:transparent}
+.note{font-size:13px;color:var(--on-navy-muted);margin:0}
+.out{display:grid;gap:10px;border:1px dashed rgba(243,154,30,.5);border-radius:8px;padding:14px;font-size:14px}
+.out pre{white-space:pre-wrap;margin:0;font-family:var(--f-mono);font-size:13px;color:#fff}
+
+/* services page */
+.more{margin-top:28px;display:flex;justify-content:flex-start}
+.btn-line{border-color:var(--fg);color:var(--fg)}
+.btn-line:hover{background:var(--fg);color:var(--bg)}
+.sp-hero{background:radial-gradient(900px 400px at 90% -20%,#1f3a70 0%,transparent 60%),var(--navy);color:var(--on-navy)}
+.sp-hero .wrap{padding-block:56px 40px;display:grid;gap:14px}
+.sp-hero .eyebrow{color:var(--amber)}
+.sp-hero h1{font-size:clamp(44px,7vw,84px);font-weight:800;text-transform:uppercase;color:#fff}
+.sp-hero p{color:var(--on-navy-muted);max-width:60ch;margin:0;font-size:18px}
+.jump{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.jump a{display:inline-flex;align-items:baseline;gap:8px;text-decoration:none;border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:7px 14px;color:#fff;font-size:15px}
+.jump a:hover{border-color:var(--amber)}
+.jump a span{font-family:var(--f-mono);font-size:12px;color:var(--amber)}
+.cat{padding-block:56px;border-bottom:1px solid var(--line);scroll-margin-top:70px}
+.cat-head{display:grid;grid-template-columns:auto 1fr auto;gap:8px 20px;align-items:end;margin-bottom:28px}
+.cat-num{font-family:var(--f-display);font-weight:800;font-size:72px;line-height:.85;color:var(--amber-ink)}
+.cat-head h2{font-size:clamp(28px,3.6vw,42px);font-weight:700;text-transform:uppercase;min-width:0}
+.cat-head h2 small{display:block;font-family:var(--f-mono);font-size:12.5px;letter-spacing:.12em;color:var(--muted);font-weight:400;margin-bottom:6px}
+.cat-head .btn{padding:10px 16px;font-size:15px}
+@media (max-width:760px){.cat-head{grid-template-columns:auto 1fr}.cat-head .btn{grid-column:1/-1;justify-self:start}.cat-num{font-size:56px}}
+.items{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 40px;list-style:none;margin:0;padding:0}
+@media (max-width:760px){.items{grid-template-columns:1fr}}
+.items li{display:grid;grid-template-columns:52px 1fr;gap:14px;padding-block:18px;border-top:1px solid var(--line);min-width:0}
+.items .code{font-family:var(--f-mono);font-size:12.5px;color:var(--amber-ink);padding-top:4px;font-variant-numeric:tabular-nums}
+.items h3{font-family:var(--f-body);font-size:17px;font-weight:600;line-height:1.35;margin-bottom:4px}
+.items p{margin:0;color:var(--muted);font-size:15px}
+
+/* echipamente la comandă */
+.order{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:8px}
+@media (max-width:760px){.order{grid-template-columns:1fr}}
+.opt{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px;display:grid;gap:8px;min-width:0}
+.opt .tag{font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--amber-ink)}
+.opt h3{font-size:28px;text-transform:uppercase}
+.opt p{margin:0;color:var(--muted)}
+.order-foot{margin-top:18px;display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between;border-top:2px solid var(--fg);padding-top:16px}
+.order-foot p{margin:0;font-weight:600;max-width:60ch}
+
+/* galerie */
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+@media (max-width:900px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.gallery figure{margin:0;display:grid;gap:8px;min-width:0}
+.gallery button{all:unset;cursor:zoom-in;display:block;border-radius:10px;overflow:hidden;background:var(--line);aspect-ratio:3/4;max-width:100%}
+.gallery button:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+.gallery button:hover img{transform:scale(1.03)}
+.gallery figcaption{font-size:14px;color:var(--muted);line-height:1.4}
+.gallery figcaption b{display:block;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--amber-ink);font-weight:500;margin-bottom:2px}
+.gallery .wide{grid-column:span 2}
+.gallery{align-items:start}
+.gallery .wide button{aspect-ratio:3/2}
+@media (max-width:900px){.gallery .wide{grid-column:1/-1}.gallery .wide button{aspect-ratio:1/1}}
+dialog#lb{border:0;padding:0;background:transparent;max-width:min(92vw,900px);max-height:92vh}
+dialog#lb::backdrop{background:rgba(5,10,20,.88)}
+dialog#lb img{display:block;max-width:100%;max-height:82vh;border-radius:8px;margin:0 auto}
+dialog#lb p{color:#e9edf6;text-align:center;margin:10px 0 0;font-size:15px}
+dialog#lb .x{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));right:calc(12px + env(safe-area-inset-right,0px));background:#f39a1e;color:#1a1205;border:0;border-radius:999px;width:44px;height:44px;font-size:22px;cursor:pointer}
+
+footer{background:var(--navy);color:var(--on-navy-muted);border-top:1px solid rgba(255,255,255,.08);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-block:22px}
+</style>
+
+</head><body><header>
+  <div class="wrap bar">
+    <a class="logo" href="index.html" aria-label="AXIOTECH, începutul paginii">
+      <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="13" fill="none" stroke="#f39a1e" stroke-width="2.5"></circle><path d="M15 4v6M15 20v6M4 15h6M20 15h6" stroke="#f39a1e" stroke-width="2.5" stroke-linecap="round"></path><circle cx="15" cy="15" r="3" fill="#ffffff"></circle></svg>
+      AXIOTECH
+    </a>
+    <nav aria-label="Navigare principală">
+      <ul>
+        <li class="hide-m"><a href="index.html" id="nav-home">Acasă</a></li>
+        <li><a href="servicii.html" id="nav-svc" aria-current="page">Serviciile mele</a></li>
+        <li class="hide-m"><a href="index.html#lucrari">Lucrări</a></li>
+        <li class="hide-m"><a href="index.html#cum">Cum funcționează</a></li>
+        <li class="hide-m"><a href="index.html#de-ce">De ce AXIOTECH</a></li>
+        <li><a class="nav-cta" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+ 
+
+ <div id="pagina-servicii">
+  <section class="sp-hero">
+    <div class="wrap">
+      <div class="eyebrow">AXIOTECH · Brașov · doar cu programare</div>
+      <h1>Serviciile mele</h1>
+      <p>Lista completă a lucrărilor pe care le fac, pe patru domenii. Alege ce te interesează și cere o ofertă direct pe WhatsApp.</p>
+      <nav class="jump" id="jump" aria-label="Domenii de servicii"><a href="#cat-auto"><span>01</span>Auto · 8</a><a href="#cat-gps"><span>02</span>GPS · 8</a><a href="#cat-pc"><span>03</span>IT · 8</a><a href="#cat-cctv"><span>04</span>CCTV · 10</a></nav>
+    </div>
+  </section>
+  <div class="wrap">
+    <section class="cat" style="border-bottom:1px solid var(--line)">
+      <div class="head" style="margin-bottom:20px">
+        <div class="eyebrow">Echipamente la comandă</div>
+        <h2 style="font-size:clamp(28px,3.6vw,42px)">Aducem și echipamentul</h2>
+        <p>Nu trebuie să cauți singur camera sau GPS-ul. Îl comandăm noi sau te ajutăm să alegi, apoi facem montajul.</p>
+      </div>
+      <div class="order">
+        <div class="opt"><span class="tag">Varianta 1</span><h3>Știi ce vrei</h3><p>Ne spui modelul, îl comandăm noi și facem montajul când sosește.</p></div>
+        <div class="opt"><span class="tag">Varianta 2</span><h3>Te ajutăm să alegi</h3><p>Îți recomandăm ce se potrivește mașinii și bugetului tău. Tu decizi ce cumperi, noi montăm.</p></div>
+      </div>
+    </section>
+  </div>
+  <div class="wrap" id="cats">
+  <section class="cat" id="cat-auto">
+    <div class="cat-head">
+      <span class="cat-num">01</span>
+      <h2><small>8 servicii · în Brașov</small>Montaj camere auto &amp; sisteme de supraveghere</h2>
+      <a class="btn btn-wa" href="https://wa.me/40750271425?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20o%20ofert%C4%83%20pentru%3A%20Montaj%20camere%20auto%20%26%20sisteme%20de%20supraveghere%20(Bra%C8%99ov)." target="_blank" rel="noopener">Cere ofertă</a>
+    </div>
+    <ul class="items">
+      <li><span class="code">AUT-01</span>
+      <div><h3>Montaj dashcam (față/spate)</h3><p>Instalare completă cu două canale.</p></div></li>
+      <li><span class="code">AUT-02</span>
+      <div><h3>Alimentare prin adaptor OBD (mod parcare)</h3><p>Conectare la priza OBD a mașinii pentru monitorizare în parcare, fără să umblăm la siguranțe sau la instalația electrică. Adaptorul OBD îl cumpără clientul; te ajutăm să alegi modelul potrivit.</p></div></li>
+      <li><span class="code">AUT-03</span>
+      <div><h3>Ascundere cabluri</h3><p>Integrare estetică prin stâlpii și plafonul mașinii (aspect OEM).</p></div></li>
+      <li><span class="code">AUT-04</span>
+      <div><h3>Configurare aplicație Wi-Fi</h3><p>Setarea telefonului pentru descărcarea rapidă a filmărilor.</p></div></li>
+      <li><span class="code">AUT-05</span>
+      <div><h3>Mentenanță sisteme video</h3><p>Verificarea conexiunilor și update de firmware pentru camere.</p></div></li>
+      <li><span class="code">AUT-06</span>
+      <div><h3>Configurare carduri de memorie</h3><p>Optimizare loop recording și testare viteză de scriere.</p></div></li>
+      <li><span class="code">AUT-07</span>
+      <div><h3>Montaj GPS tracker</h3><p>Ascunderea unui modul de urmărire prin GPS, util în caz de furt.</p></div></li>
+      <li><span class="code">AUT-08</span>
+      <div><h3>Upgrade unități multimedia (Android Auto/CarPlay)</h3><p>Înlocuirea navigației vechi.</p></div></li>
+    </ul>
+  </section>
+  <section class="cat" id="cat-gps">
+    <div class="cat-head">
+      <span class="cat-num">02</span>
+      <h2><small>8 servicii · în Brașov</small>Reparații GPS &amp; actualizări hărți</h2>
+      <a class="btn btn-wa" href="https://wa.me/40750271425?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20o%20ofert%C4%83%20pentru%3A%20Repara%C8%9Bii%20GPS%20%26%20actualiz%C4%83ri%20h%C4%83r%C8%9Bi%20(Bra%C8%99ov)." target="_blank" rel="noopener">Cere ofertă</a>
+    </div>
+    <ul class="items">
+      <li><span class="code">GPS-01</span>
+      <div><h3>Actualizare hărți camion (iGO, Garmin etc.)</h3><p>Trasee specifice, cu restricții de tonaj și înălțime.</p></div></li>
+      <li><span class="code">GPS-02</span>
+      <div><h3>Resoftare GPS-uri blocate</h3><p>Repararea dispozitivelor care rămân la logo-ul de pornire.</p></div></li>
+      <li><span class="code">GPS-03</span>
+      <div><h3>Înlocuire acumulatori</h3><p>Schimbarea bateriilor care nu mai țin curent.</p></div></li>
+      <li><span class="code">GPS-04</span>
+      <div><h3>Reparații display/touchscreen</h3><p>Înlocuirea ecranelor crăpate sau care nu mai răspund la atingere.</p></div></li>
+      <li><span class="code">GPS-05</span>
+      <div><h3>Configurare hărți offline</h3><p>Pregătirea dispozitivelor pentru utilizare fără internet.</p></div></li>
+      <li><span class="code">GPS-06</span>
+      <div><h3>Actualizare software radare</h3><p>Alerte pentru camerele de viteză din Europa.</p></div></li>
+      <li><span class="code">GPS-07</span>
+      <div><h3>Optimizare memorie internă</h3><p>Curățarea fișierelor inutile pentru o viteză mai mare de calcul.</p></div></li>
+      <li><span class="code">GPS-08</span>
+      <div><h3>Suport tehnic pentru tablete de navigație</h3><p>Configurare tablete dedicate pentru șoferii profesioniști.</p></div></li>
+    </ul>
+  </section>
+  <section class="cat" id="cat-pc">
+    <div class="cat-head">
+      <span class="cat-num">03</span>
+      <h2><small>8 servicii · în Brașov</small>Service PC, laptop &amp; mentenanță IT</h2>
+      <a class="btn btn-wa" href="https://wa.me/40750271425?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20o%20ofert%C4%83%20pentru%3A%20Service%20PC%2C%20laptop%20%26%20mentenan%C8%9B%C4%83%20IT%20(Bra%C8%99ov)." target="_blank" rel="noopener">Cere ofertă</a>
+    </div>
+    <ul class="items">
+      <li><span class="code">IT-01</span>
+      <div><h3>Instalare/reinstalare Windows cu licență</h3><p>Configurare completă cu drivere și programe esențiale.</p></div></li>
+      <li><span class="code">IT-02</span>
+      <div><h3>Curățare hardware profesională</h3><p>Eliminarea prafului și schimbarea pastei termoconductoare.</p></div></li>
+      <li><span class="code">IT-03</span>
+      <div><h3>Upgrade SSD</h3><p>Transformarea unui PC vechi într-unul rapid prin trecerea la SSD.</p></div></li>
+      <li><span class="code">IT-04</span>
+      <div><h3>Upgrade memorie RAM</h3><p>Îmbunătățirea performanței în multitasking.</p></div></li>
+      <li><span class="code">IT-05</span>
+      <div><h3>Reparații laptop (hardware)</h3><p>Înlocuire tastaturi, ecrane, balamale sau ventilatoare.</p></div></li>
+      <li><span class="code">IT-06</span>
+      <div><h3>Optimizare start-up</h3><p>Accelerarea timpului de pornire a sistemului.</p></div></li>
+      <li><span class="code">IT-07</span>
+      <div><h3>Configurare rețele Wi-Fi</h3><p>Instalare routere, extendere și securizare rețea.</p></div></li>
+      <li><span class="code">IT-08</span>
+      <div><h3>Diagnosticare completă</h3><p>Identificarea cauzelor pentru care un PC se restartează sau „îngheață”.</p></div></li>
+    </ul>
+  </section>
+  <section class="cat" id="cat-cctv">
+    <div class="cat-head">
+      <span class="cat-num">04</span>
+      <h2><small>10 servicii · în Brașov</small>Sisteme supraveghere video (CCTV &amp; IP)</h2>
+      <a class="btn btn-wa" href="https://wa.me/40750271425?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20o%20ofert%C4%83%20pentru%3A%20Sisteme%20supraveghere%20video%20(CCTV%20%26%20IP)%20(Bra%C8%99ov)." target="_blank" rel="noopener">Cere ofertă</a>
+    </div>
+    <ul class="items">
+      <li><span class="code">CCT-01</span>
+      <div><h3>Configurare camere Wi-Fi</h3><p>Instalare fără cabluri vizibile, ideală pentru apartamente sau birouri.</p></div></li>
+      <li><span class="code">CCT-02</span>
+      <div><h3>Configurare cloud recording</h3><p>Stocare în cloud, ca să accesezi înregistrările de oriunde.</p></div></li>
+      <li><span class="code">CCT-03</span>
+      <div><h3>Integrare smart home</h3><p>Conectarea camerelor cu Google Home, Alexa sau Apple HomeKit.</p></div></li>
+      <li><span class="code">CCT-04</span>
+      <div><h3>Detectare mișcare &amp; notificări</h3><p>Alerte instant pe telefon la detectarea intrușilor.</p></div></li>
+      <li><span class="code">CCT-05</span>
+      <div><h3>Camere PTZ (pan-tilt-zoom)</h3><p>Montaj camere care se rotesc 360°, controlate din aplicație.</p></div></li>
+      <li><span class="code">CCT-06</span>
+      <div><h3>Montaj camere de interior/exterior</h3><p>Alegerea corectă a gradului de protecție (IP66/IP67).</p></div></li>
+      <li><span class="code">CCT-07</span>
+      <div><h3>Audio bidirecțional</h3><p>Funcția de „interfon”: vorbești și auzi prin cameră.</p></div></li>
+      <li><span class="code">CCT-08</span>
+      <div><h3>Mentenanță &amp; update firmware</h3><p>Verificarea periodică a softului pentru securitate maximă.</p></div></li>
+      <li><span class="code">CCT-09</span>
+      <div><h3>Instalare camere 4K/UHD</h3><p>Configurare pentru claritate maximă a detaliilor (numere auto, fețe).</p></div></li>
+      <li><span class="code">CCT-10</span>
+      <div><h3>Extindere sisteme existente</h3><p>Adăugarea de camere noi în sisteme NVR deja instalate.</p></div></li>
+    </ul>
+  </section></div>
+ </div>
+ <dialog id="lb" aria-label="Poză mărită"><button class="x" type="button" id="lbClose" aria-label="Închide">×</button><img id="lbImg" alt=""><p id="lbCap"></p></dialog>
+
+  <section class="block contact" id="contact">
+    <div class="wrap">
+      <div class="head">
+        <div class="eyebrow">Contact</div>
+        <h2>Cere o ofertă</h2>
+        <p>Completează formularul și îți pregătim mesajul pentru WhatsApp. Răspundem cu evaluarea gratuită.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="info">
+          <div class="info-row"><span class="eyebrow">Telefon / WhatsApp</span><span class="copy"><strong id="phoneText">+40 750 271 425</strong><button type="button" id="copyPhone">Copiază</button></span></div>
+          <div class="info-row"><span class="eyebrow">Locație</span><strong>Brașov</strong></div>
+          <div class="info-row"><span class="eyebrow">Program</span><strong>Doar cu programare</strong><span class="note">Sună sau scrie pe WhatsApp și stabilim ora.</span></div>
+        </div>
+        <form id="f" novalidate="">
+          <div class="row">
+            <label for="nume">Nume<input id="nume" name="nume" autocomplete="name" placeholder="Andrei Popescu" required=""></label>
+            <label for="serviciu">Serviciu
+              <select id="serviciu" name="serviciu">
+                <option value="">Alege serviciul…</option>
+              <optgroup label="Montaj camere auto &amp; sisteme de supraveghere"><option value="Montaj dashcam (față/spate)">Montaj dashcam (față/spate)</option><option value="Alimentare prin adaptor OBD (mod parcare)">Alimentare prin adaptor OBD (mod parcare)</option><option value="Ascundere cabluri">Ascundere cabluri</option><option value="Configurare aplicație Wi-Fi">Configurare aplicație Wi-Fi</option><option value="Mentenanță sisteme video">Mentenanță sisteme video</option><option value="Configurare carduri de memorie">Configurare carduri de memorie</option><option value="Montaj GPS tracker">Montaj GPS tracker</option><option value="Upgrade unități multimedia (Android Auto/CarPlay)">Upgrade unități multimedia (Android Auto/CarPlay)</option></optgroup><optgroup label="Reparații GPS &amp; actualizări hărți"><option value="Actualizare hărți camion (iGO, Garmin etc.)">Actualizare hărți camion (iGO, Garmin etc.)</option><option value="Resoftare GPS-uri blocate">Resoftare GPS-uri blocate</option><option value="Înlocuire acumulatori">Înlocuire acumulatori</option><option value="Reparații display/touchscreen">Reparații display/touchscreen</option><option value="Configurare hărți offline">Configurare hărți offline</option><option value="Actualizare software radare">Actualizare software radare</option><option value="Optimizare memorie internă">Optimizare memorie internă</option><option value="Suport tehnic pentru tablete de navigație">Suport tehnic pentru tablete de navigație</option></optgroup><optgroup label="Service PC, laptop &amp; mentenanță IT"><option value="Instalare/reinstalare Windows cu licență">Instalare/reinstalare Windows cu licență</option><option value="Curățare hardware profesională">Curățare hardware profesională</option><option value="Upgrade SSD">Upgrade SSD</option><option value="Upgrade memorie RAM">Upgrade memorie RAM</option><option value="Reparații laptop (hardware)">Reparații laptop (hardware)</option><option value="Optimizare start-up">Optimizare start-up</option><option value="Configurare rețele Wi-Fi">Configurare rețele Wi-Fi</option><option value="Diagnosticare completă">Diagnosticare completă</option></optgroup><optgroup label="Sisteme supraveghere video (CCTV &amp; IP)"><option value="Configurare camere Wi-Fi">Configurare camere Wi-Fi</option><option value="Configurare cloud recording">Configurare cloud recording</option><option value="Integrare smart home">Integrare smart home</option><option value="Detectare mișcare &amp; notificări">Detectare mișcare &amp; notificări</option><option value="Camere PTZ (pan-tilt-zoom)">Camere PTZ (pan-tilt-zoom)</option><option value="Montaj camere de interior/exterior">Montaj camere de interior/exterior</option><option value="Audio bidirecțional">Audio bidirecțional</option><option value="Mentenanță &amp; update firmware">Mentenanță &amp; update firmware</option><option value="Instalare camere 4K/UHD">Instalare camere 4K/UHD</option><option value="Extindere sisteme existente">Extindere sisteme existente</option></optgroup><optgroup label="Altele"><option value="Echipament la comandă + montaj">Echipament la comandă + montaj</option><option value="Altceva">Altceva</option></optgroup></select>
+            </label>
+          </div>
+          <label for="aparat">Aparat / mașină<input id="aparat" name="aparat" placeholder="ex. Volkswagen Passat 2016, cameră 70mai A810"></label>
+          <label for="mesaj">Ce problemă are?<textarea id="mesaj" name="mesaj" placeholder="Descrie pe scurt ce vrei să facem." required=""></textarea></label>
+          <button class="btn btn-wa" type="submit">Pregătește mesajul WhatsApp</button>
+          <div class="out" id="out" hidden="">
+            <pre id="outText"></pre>
+            <div class="actions"><a class="btn btn-wa" id="outLink" href="#" target="_blank" rel="noopener">Deschide WhatsApp</a><button class="btn btn-ghost" type="button" id="copyMsg">Copiază mesajul</button></div>
+          </div>
+          <p class="note" id="err" role="alert"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><span>© 2026 AXIOTECH · Brașov</span><span>Camere auto · GPS · PC &amp; laptop · CCTV</span></div>
+</footer>
+
+
+<script>(function(){
+  var WA='40750271425', PHONE='+40 750 271 425', waBase='https://wa.me/'+WA;
+  function copy(text,btn){ if(!navigator.clipboard) return; navigator.clipboard.writeText(text).then(function(){var t=btn.textContent;btn.textContent='Copiat';setTimeout(function(){btn.textContent=t},1500)}).catch(function(){}); }
+  var cp=document.getElementById('copyPhone'); if(cp) cp.addEventListener('click',function(e){copy(PHONE,e.currentTarget)});
+  var f=document.getElementById('f');
+  if(f) f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var v=function(id){return document.getElementById(id).value.trim()}, err=document.getElementById('err');
+    if(!v('nume')||!v('serviciu')||!v('mesaj')){err.textContent='Completează numele, alege serviciul și descrie problema, ca să știm cu ce te ajutăm.';return;}
+    err.textContent='';
+    var opt=document.getElementById('serviciu').selectedOptions[0], dom=opt.closest('optgroup');
+    var msg='Bună ziua! Sunt '+v('nume')+'.\nServiciu: '+v('serviciu')+(dom?'\nDomeniu: '+dom.label:'')+(v('aparat')?'\nAparat: '+v('aparat'):'')+'\nProblema: '+v('mesaj');
+    document.getElementById('outText').textContent=msg;
+    document.getElementById('outLink').href=waBase+'?text='+encodeURIComponent(msg);
+    document.getElementById('out').hidden=false;
+  });
+  var cm=document.getElementById('copyMsg'); if(cm) cm.addEventListener('click',function(e){copy(document.getElementById('outText').textContent,e.currentTarget)});
+  var g=document.getElementById('gallery'), lb=document.getElementById('lb');
+  if(g&&lb){
+    g.addEventListener('click',function(e){
+      var btn=e.target.closest('button[data-i]'); if(!btn) return;
+      var img=btn.querySelector('img'), cap=btn.parentNode.querySelector('figcaption');
+      var li=document.getElementById('lbImg'); li.src=img.getAttribute('src'); li.alt=img.alt;
+      document.getElementById('lbCap').textContent=cap?cap.textContent:'';
+      if(lb.showModal) lb.showModal(); else lb.setAttribute('open','');
+    });
+    document.getElementById('lbClose').addEventListener('click',function(){lb.close()});
+    lb.addEventListener('click',function(e){if(e.target===lb) lb.close()});
+  }
+})();
+</script></body></html>
