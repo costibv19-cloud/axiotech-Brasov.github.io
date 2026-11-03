@@ -187,6 +187,14 @@ dialog#lb img{display:block;max-width:100%;max-height:82vh;border-radius:8px;mar
 dialog#lb p{color:#e9edf6;text-align:center;margin:10px 0 0;font-size:15px}
 dialog#lb .x{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));right:calc(12px + env(safe-area-inset-right,0px));background:#f39a1e;color:#1a1205;border:0;border-radius:999px;width:44px;height:44px;font-size:22px;cursor:pointer}
 
+.social{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.social a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#fff;border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:7px 13px 7px 10px;font-size:14px}
+.social a:hover{border-color:var(--amber);color:var(--amber)}
+.social-ft{display:flex;gap:6px}
+.social-ft a{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:50%;color:var(--on-navy-muted);border:1px solid rgba(255,255,255,.12)}
+.social-ft a:hover{color:#fff;border-color:var(--amber)}
+.follow{color:var(--muted);margin:14px 0 0}
+.follow a{color:var(--amber-ink);font-weight:600}
 footer{background:var(--navy);color:var(--on-navy-muted);border-top:1px solid rgba(255,255,255,.08);font-size:14px}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-block:22px}
 </style>
@@ -355,6 +363,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
           <div class="info-row"><span class="eyebrow">Telefon / WhatsApp</span><span class="copy"><strong id="phoneText">+40 750 271 425</strong><button type="button" id="copyPhone">Copiază</button></span></div>
           <div class="info-row"><span class="eyebrow">Locație</span><strong>Brașov</strong></div>
           <div class="info-row"><span class="eyebrow">Program</span><strong>Doar cu programare</strong><span class="note">Sună sau scrie pe WhatsApp și stabilim ora.</span></div>
+          <div class="info-row"><span class="eyebrow">Urmărește-ne</span><span class="note">Lucrări noi, montaje și sfaturi, pe rețelele sociale.</span><div class="social"><a class="soc-fb" href="https://www.facebook.com/profile.php?id=61571365679620" target="_blank" rel="noopener" aria-label="AXIOTECH pe Facebook"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.6 1.6-1.6h1.7V4.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1v2.4H7.7V14h2.7v8z"></path></svg><span>Facebook</span></a><a class="soc-ig" href="https://www.instagram.com/constantin.v38/" target="_blank" rel="noopener" aria-label="AXIOTECH pe Instagram"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="2"></rect><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"></circle><circle cx="17.2" cy="6.8" r="1.3" fill="currentColor"></circle></svg><span>Instagram</span></a><a class="soc-tt" href="https://www.tiktok.com/@constantin.cam.gps" target="_blank" rel="noopener" aria-label="AXIOTECH pe TikTok"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M16.6 3c.3 2.2 1.6 3.6 3.9 3.8v3.1a7 7 0 0 1-3.9-1.2v6.2a5.8 5.8 0 1 1-5-5.7v3.1a2.7 2.7 0 1 0 1.9 2.6V3z"></path></svg><span>TikTok</span></a><a class="soc-th" href="https://www.threads.com/@constantin.v38" target="_blank" rel="noopener" aria-label="AXIOTECH pe Threads"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M16.5 11.2c-.4-2.6-2.2-3.7-4.3-3.7-2.3 0-3.7 1.4-3.9 2.9M15.4 11.3c-3.9-.4-6.6.5-6.4 2.6.2 1.7 2.4 2.3 4 1.8 2.3-.7 2.7-3.3 2.4-5.2M12.2 20.5c-4.6 0-8-3-8-8.5s3.4-8.5 8-8.5c3.6 0 6.2 1.8 7.3 5"></path><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M16.6 12.2c2.4 1.1 3.4 3.4 2.4 5.6-.9 1.9-3.3 2.8-6.8 2.7"></path></svg><span>Threads</span></a></div></div>
         </div>
         <form id="f" novalidate="">
           <div class="row">
@@ -380,7 +389,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 </main>
 
 <footer>
-  <div class="wrap"><span>© 2026 AXIOTECH · Brașov</span><span>Camere auto · GPS · PC &amp; laptop · CCTV</span></div>
+  <div class="wrap" style="align-items:center"><span>© 2026 AXIOTECH · Brașov<br>Camere auto · GPS · PC &amp; laptop · CCTV</span><div class="social-ft"><a class="soc-fb" href="https://www.facebook.com/profile.php?id=61571365679620" target="_blank" rel="noopener" aria-label="AXIOTECH pe Facebook"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.6 1.6-1.6h1.7V4.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1v2.4H7.7V14h2.7v8z"></path></svg></a><a class="soc-ig" href="https://www.instagram.com/constantin.v38/" target="_blank" rel="noopener" aria-label="AXIOTECH pe Instagram"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="2"></rect><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"></circle><circle cx="17.2" cy="6.8" r="1.3" fill="currentColor"></circle></svg></a><a class="soc-tt" href="https://www.tiktok.com/@constantin.cam.gps" target="_blank" rel="noopener" aria-label="AXIOTECH pe TikTok"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M16.6 3c.3 2.2 1.6 3.6 3.9 3.8v3.1a7 7 0 0 1-3.9-1.2v6.2a5.8 5.8 0 1 1-5-5.7v3.1a2.7 2.7 0 1 0 1.9 2.6V3z"></path></svg></a><a class="soc-th" href="https://www.threads.com/@constantin.v38" target="_blank" rel="noopener" aria-label="AXIOTECH pe Threads"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M16.5 11.2c-.4-2.6-2.2-3.7-4.3-3.7-2.3 0-3.7 1.4-3.9 2.9M15.4 11.3c-3.9-.4-6.6.5-6.4 2.6.2 1.7 2.4 2.3 4 1.8 2.3-.7 2.7-3.3 2.4-5.2M12.2 20.5c-4.6 0-8-3-8-8.5s3.4-8.5 8-8.5c3.6 0 6.2 1.8 7.3 5"></path><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M16.6 12.2c2.4 1.1 3.4 3.4 2.4 5.6-.9 1.9-3.3 2.8-6.8 2.7"></path></svg></a></div></div>
 </footer>
 
 
