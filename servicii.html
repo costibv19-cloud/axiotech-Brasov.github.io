@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="description" content="Lista completă de servicii AXIOTECH în Brașov: montaj dashcam și adaptor OBD, actualizare hărți camion iGO/Garmin, resoftare GPS, upgrade SSD și RAM, instalare Windows, camere de supraveghere Wi-Fi și IP."><title>Serviciile mele – AXIOTECH Brașov | Camere auto, GPS, PC, CCTV</title><style>:root{padding-left:0;padding-right:0}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&amp;family=Archivo:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
 <style>
@@ -34,8 +36,12 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var
 .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--f-display);font-weight:800;font-size:24px;letter-spacing:.06em}
 .logo svg{flex:none}
+.logo-txt{display:grid;line-height:1}
+.logo-name{font-size:24px}
+.logo-city{font-family:var(--f-mono);font-weight:500;font-size:10.5px;letter-spacing:.38em;color:var(--amber);margin-top:4px}
 nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:15px}
-nav a{text-decoration:none;color:var(--on-navy-muted)}
+nav a{text-decoration:none;color:var(--on-navy-muted);white-space:nowrap}
+@media (max-width:440px){.hide-sm{display:none}.logo-name{font-size:21px}.logo svg{width:40px;height:40px}.bar{gap:10px}}
 nav a:hover{color:#fff}
 .nav-cta{background:var(--wa);color:var(--wa-ink)!important;padding:7px 14px;border-radius:6px;font-weight:600}
 .nav-cta:hover{background:var(--wa-dark)}
@@ -188,13 +194,13 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 </head><body><header>
   <div class="wrap bar">
     <a class="logo" href="index.html" aria-label="AXIOTECH, începutul paginii">
-      <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="13" fill="none" stroke="#f39a1e" stroke-width="2.5"></circle><path d="M15 4v6M15 20v6M4 15h6M20 15h6" stroke="#f39a1e" stroke-width="2.5" stroke-linecap="round"></path><circle cx="15" cy="15" r="3" fill="#ffffff"></circle></svg>
-      AXIOTECH
+      <svg width="46" height="46" aria-hidden="true" viewBox="0 0 200 200"> <circle cx="100" cy="100" r="92" fill="#0f1d3a" fill-opacity=".55" stroke="#3a5ea6" stroke-width="3"></circle> <circle cx="100" cy="100" r="72" fill="none" stroke="#2c4a85" stroke-width="2.5"></circle> <g fill="#25d366"><circle cx="33" cy="62" r="7"></circle><circle cx="160" cy="46" r="7"></circle><circle cx="178" cy="122" r="7"></circle><circle cx="58" cy="164" r="7"></circle><circle cx="128" cy="32" r="5.5"></circle></g> <g fill="#f39a1e"><circle cx="24" cy="128" r="7"></circle><circle cx="146" cy="168" r="7"></circle><circle cx="66" cy="30" r="5.5"></circle></g> <g transform="translate(40 40)"> <g stroke="#f39a1e" stroke-width="6" stroke-linecap="round"><path d="M42 12v12M60 12v12M78 12v12M42 96v12M60 96v12M78 96v12M12 42h12M12 60h12M12 78h12M96 42h12M96 60h12M96 78h12"></path></g> <rect x="24" y="24" width="72" height="72" rx="13" fill="#f39a1e"></rect><rect x="32.5" y="32.5" width="55" height="55" rx="8" fill="#0f1d3a"></rect> <path d="M46 78 60 41l14 37M51 66h18" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path> <circle cx="78" cy="42" r="4" fill="#25d366"></circle> </g> </svg>
+      <span class="logo-txt"><span class="logo-name">AXIOTECH</span><span class="logo-city">BRAȘOV</span></span>
     </a>
     <nav aria-label="Navigare principală">
       <ul>
         <li class="hide-m"><a href="index.html" id="nav-home">Acasă</a></li>
-        <li><a href="servicii.html" id="nav-svc" aria-current="page">Serviciile mele</a></li>
+        <li><a href="servicii.html" id="nav-svc" aria-current="page">Serviciile<span class="hide-sm"> mele</span></a></li>
         <li class="hide-m"><a href="index.html#lucrari">Lucrări</a></li>
         <li class="hide-m"><a href="index.html#cum">Cum funcționează</a></li>
         <li class="hide-m"><a href="index.html#de-ce">De ce AXIOTECH</a></li>
