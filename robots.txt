@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://costibv19-cloud.github.io/axiotech-Brasov.github.io/sitemap.xml
