@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="description" content="AXIOTECH Brașov: montaj camere auto și dashcam, reparații GPS și hărți pentru camion, service PC și laptop, supraveghere video CCTV. Evaluare gratuită, doar cu programare. Tel. +40 750 271 425."><title>AXIOTECH Brașov – Montaj camere auto, reparații GPS, service PC</title><style>:root{padding-left:0;padding-right:0}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="description" content="AXIOTECH Brașov: montaj camere auto și dashcam, reparații GPS și hărți pentru camion, service PC și laptop, camere de supraveghere. Evaluare gratuită, cu programare."><title>AXIOTECH Brașov – Montaj camere auto, reparații GPS, service PC</title><link rel="canonical" href="https://costibv19-cloud.github.io/axiotech-Brasov.github.io/"><meta property="og:type" content="website"><meta property="og:locale" content="ro_RO"><meta property="og:site_name" content="AXIOTECH Brașov"><meta property="og:title" content="AXIOTECH Brașov – Montaj camere auto, reparații GPS, service PC"><meta property="og:description" content="AXIOTECH Brașov: montaj camere auto și dashcam, reparații GPS și hărți pentru camion, service PC și laptop, camere de supraveghere. Evaluare gratuită, cu programare."><meta property="og:url" content="https://costibv19-cloud.github.io/axiotech-Brasov.github.io/"><meta property="og:image" content="https://costibv19-cloud.github.io/axiotech-Brasov.github.io/inainte-dupa.jpg"><meta name="twitter:card" content="summary_large_image"><style>:root{padding-left:0;padding-right:0}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -76,7 +76,7 @@ section.block{padding-block:80px}
 
 .services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
 @media (max-width:900px){.services{grid-template-columns:1fr}}
-.svc{background:var(--surface);border:1px solid var(--line);border-radius:12px;display:grid;grid-template-rows:auto auto 1fr auto;overflow:hidden;min-width:0}
+.svc{background:var(--surface);border:1px solid var(--line);border-radius:12px;display:grid;grid-template-rows:auto auto 1fr auto auto;overflow:hidden;min-width:0}
 .svc-top{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px dashed var(--line);font-family:var(--f-mono);font-size:12px;color:var(--muted)}
 .svc-top b{color:var(--amber-ink);font-weight:500}
 .svc-body{padding:22px 20px 6px;display:grid;gap:10px}
@@ -197,9 +197,92 @@ dialog#lb .x{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));right:
 .follow a{color:var(--amber-ink);font-weight:600}
 footer{background:var(--navy);color:var(--on-navy-muted);border-top:1px solid rgba(255,255,255,.08);font-size:14px}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-block:22px}
+
+/* breadcrumbs, intro, FAQ, related (SEO pages) */
+.sp-hero h1 em{font-style:normal;color:var(--amber)}
+.crumbs{font-family:var(--f-mono);font-size:12.5px;color:var(--on-navy-muted);display:flex;flex-wrap:wrap;gap:6px}
+.crumbs a{color:var(--on-navy-muted);text-decoration:none}.crumbs a:hover{color:#fff}
+.crumbs span[aria-current]{color:var(--amber)}
+.intro{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:start}
+@media (max-width:860px){.intro{grid-template-columns:1fr}}
+.intro p{margin:0 0 14px}
+.facts{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;display:grid;gap:12px;margin:0}
+.facts div{display:grid;gap:2px;padding-bottom:10px;border-bottom:1px dashed var(--line)}
+.facts div:last-child{border-bottom:0;padding-bottom:0}
+.facts dt{font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--amber-ink)}
+.facts dd{margin:0;font-weight:600}
+.faq{display:grid;gap:0;border-top:2px solid var(--fg);max-width:860px}
+.faq details{border-bottom:1px solid var(--line);padding-block:4px}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center;padding-block:16px;font-family:var(--f-display);font-weight:700;font-size:22px;text-transform:uppercase;line-height:1.15}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--f-mono);font-weight:500;font-size:22px;color:var(--amber-ink);flex:none}
+.faq details[open] summary::after{content:"−"}
+.faq details p{margin:0 0 18px;color:var(--muted);max-width:70ch}
+.related{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:860px){.related{grid-template-columns:1fr}}
+.related a{display:grid;gap:6px;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.related a:hover{border-color:var(--amber)}
+.related b{font-family:var(--f-display);font-size:24px;text-transform:uppercase;line-height:1.1}
+.related span{color:var(--muted);font-size:15px}
+.svc-more{display:block;padding:12px 20px;font-weight:600;text-decoration:none;color:var(--amber-ink);border-top:1px solid var(--line)}
+.svc-more:hover{text-decoration:underline}
+.cat-link{margin:18px 0 0}
+.cat-link a{color:var(--amber-ink);font-weight:600}
+.reviews{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px}
+@media (max-width:860px){.reviews{grid-template-columns:1fr;padding:22px}}
+.reviews h2{font-size:clamp(30px,3.8vw,44px);font-weight:700;text-transform:uppercase}
+.reviews p{margin:10px 0 0;color:var(--muted)}
+.stars{display:flex;gap:4px;margin-bottom:10px}
+.stars svg{width:22px;height:22px;fill:var(--amber)}
+.rev-actions{display:grid;gap:12px}
+.btn-g{background:#fff;color:#1f1f1f;border-color:var(--line)}
+.btn-g:hover{border-color:var(--amber)}
+.btn-g svg{width:20px;height:20px;flex:none}
+.btn-amber{background:var(--amber);color:#1a1205}
+.btn-amber:hover{background:#ffad3a}
+.rev-actions .note{color:var(--muted);font-size:13.5px}
+.shop{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+@media (max-width:760px){.shop{grid-template-columns:1fr}}
+.prod{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:grid;grid-template-rows:auto 1fr auto;min-width:0}
+.prod-img{background:radial-gradient(500px 220px at 50% 0%,#1f3a70,var(--navy));padding:22px 22px 14px;display:grid;place-items:center;position:relative}
+.prod-img img,.prod-img svg{width:100%;max-width:340px;height:auto;display:block}
+.prod-badge{position:absolute;top:14px;left:14px;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;background:var(--amber);color:#1a1205;border-radius:999px;padding:4px 10px}
+.prod-body{padding:20px 22px;display:grid;gap:12px;align-content:start}
+.prod h3{font-size:28px;text-transform:uppercase}
+.prod ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.prod li{display:grid;grid-template-columns:18px 1fr;gap:10px}
+.prod li::before{content:"";width:10px;height:10px;margin-top:8px;border:2px solid var(--amber);border-radius:2px}
+.prod-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:16px 22px;border-top:1px solid var(--line);background:color-mix(in srgb,var(--amber) 9%,var(--surface))}
+.price{font-family:var(--f-display);font-weight:800;font-size:38px;line-height:1}
+.price small{font-size:18px;font-weight:600;margin-left:4px}
+.shop-note{color:var(--muted);margin:16px 0 0;font-size:15px}
+.dd{position:relative}
+.dd summary{list-style:none;cursor:pointer;color:var(--on-navy-muted);white-space:nowrap;display:inline-flex;align-items:center;gap:6px}
+.dd summary::-webkit-details-marker{display:none}
+.dd summary::after{content:"";width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .15s}
+.dd[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.dd summary:hover,.dd[open] summary{color:#fff}
+.dd.cur summary{color:#fff;box-shadow:inset 0 -2px 0 var(--amber)}
+nav .dd-menu{position:absolute;top:calc(100% + 14px);left:-14px;display:grid;gap:2px;min-width:270px;background:var(--navy-2);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:8px;box-shadow:0 18px 40px rgba(0,0,0,.35);z-index:20}
+@media (max-width:760px){nav .dd-menu{position:fixed;left:12px;right:12px;top:calc(64px + env(safe-area-inset-top,0px));min-width:0}}
+nav .dd-menu a{display:grid;gap:1px;padding:10px 12px;border-radius:7px;color:#fff;white-space:normal}
+nav .dd-menu a:hover,nav .dd-menu a[aria-current="page"]{background:rgba(255,255,255,.07)}
+nav .dd-menu a small{font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;color:var(--amber);text-transform:uppercase}
+nav .dd-menu a.all{border-top:1px solid rgba(255,255,255,.1);margin-top:4px;padding-top:12px;color:var(--on-navy-muted)}
+.quick{background:var(--navy-2);border-top:1px solid rgba(255,255,255,.08)}
+.quick .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;padding-block:20px}
+@media (max-width:860px){.quick .wrap{grid-template-columns:1fr 1fr}}
+.quick a{white-space:normal;display:grid;gap:4px;text-decoration:none;color:#fff;border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:14px 16px;min-width:0}
+.quick a:hover{border-color:var(--amber);background:rgba(255,255,255,.04)}
+.quick small{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;color:var(--amber);text-transform:uppercase}
+.quick b{font-family:var(--f-display);font-size:24px;font-weight:700;text-transform:uppercase;line-height:1.05}
+.quick span{font-size:14px;color:var(--on-navy-muted)}
+@media (max-width:440px){.quick b{font-size:19px;overflow-wrap:anywhere}.quick span{display:none}}
+.ft-links{display:flex;flex-wrap:wrap;gap:6px 18px;width:100%;padding-top:4px}
+.ft-links a{color:var(--on-navy-muted);text-decoration:none}.ft-links a:hover{color:#fff}
 </style>
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"AXIOTECH","description":"Montaj camere auto și dashcam, reparații GPS și actualizări hărți, service PC și laptop, sisteme de supraveghere video.","telephone":"+40750271425","address":{"@type":"PostalAddress","addressLocality":"Brașov","addressCountry":"RO"},"areaServed":"Brașov","priceRange":"$$","sameAs":["https://www.facebook.com/profile.php?id=61571365679620","https://www.instagram.com/constantin.v38/","https://www.tiktok.com/@constantin.cam.gps","https://www.threads.com/@constantin.v38"]}</script></head><body><header>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://costibv19-cloud.github.io/axiotech-Brasov.github.io/#business","name":"AXIOTECH","description":"AXIOTECH face în Brașov montaj camere auto și dashcam, reparații GPS și actualizări de hărți pentru camion, service PC și laptop și instalare de camere de supraveghere. Lucrăm doar cu programare, cu evaluare gratuită.","url":"https://costibv19-cloud.github.io/axiotech-Brasov.github.io/","logo":"https://costibv19-cloud.github.io/axiotech-Brasov.github.io/apple-touch-icon.png","image":"https://costibv19-cloud.github.io/axiotech-Brasov.github.io/inainte-dupa.jpg","telephone":"+40750271425","address":{"@type":"PostalAddress","addressLocality":"Brașov","addressCountry":"RO"},"areaServed":{"@type":"City","name":"Brașov"},"priceRange":"$$","sameAs":["https://www.facebook.com/profile.php?id=61571365679620","https://www.instagram.com/constantin.v38/","https://www.tiktok.com/@constantin.cam.gps","https://www.threads.com/@constantin.v38","https://g.page/r/CSpU8OdIdIHFEBM"],"hasMap":"https://g.page/r/CSpU8OdIdIHFEBM","hasOfferCatalog":{"@type":"OfferCatalog","name":"Servicii AXIOTECH","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Montaj camere auto","url":"https://costibv19-cloud.github.io/axiotech-Brasov.github.io/montaj-camera-auto-brasov.html"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Reparații GPS și hărți camion","url":"https://costibv19-cloud.github.io/axiotech-Brasov.github.io/reparatii-gps-harti-camion-brasov.html"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Service PC și laptop","url":"https://costibv19-cloud.github.io/axiotech-Brasov.github.io/service-pc-laptop-brasov.html"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Camere de supraveghere","url":"https://costibv19-cloud.github.io/axiotech-Brasov.github.io/camere-supraveghere-brasov.html"}}]}},{"@type":"WebSite","@id":"https://costibv19-cloud.github.io/axiotech-Brasov.github.io/#website","url":"https://costibv19-cloud.github.io/axiotech-Brasov.github.io/","name":"AXIOTECH Brașov","inLanguage":"ro","publisher":{"@id":"https://costibv19-cloud.github.io/axiotech-Brasov.github.io/#business"}},{"@type":"FAQPage","@id":"https://costibv19-cloud.github.io/axiotech-Brasov.github.io/#faq","mainEntity":[{"@type":"Question","name":"Unde se află AXIOTECH și care e programul?","acceptedAnswer":{"@type":"Answer","text":"AXIOTECH lucrează în Brașov, doar cu programare. Ne scrii pe WhatsApp sau ne suni la +40 750 271 425 și stabilim împreună ora."}},{"@type":"Question","name":"Cât costă evaluarea?","acceptedAnswer":{"@type":"Answer","text":"Evaluarea este gratuită. Îți spunem ce trebuie făcut, cât durează și cât costă înainte să începem, fără obligații."}},{"@type":"Question","name":"Puteți aduce voi echipamentul?","acceptedAnswer":{"@type":"Answer","text":"Da. Comandăm camera auto, GPS-ul, camerele de supraveghere sau componentele PC după modelul pe care îl vrei, sau te ajutăm să alegi. Apoi facem montajul. Poți aduce și echipamentul cumpărat de tine."}},{"@type":"Question","name":"Oferiți garanție?","acceptedAnswer":{"@type":"Answer","text":"Da. La predare testăm împreună lucrarea și primești garanție pe manoperă."}},{"@type":"Question","name":"Ce servicii faceți?","acceptedAnswer":{"@type":"Answer","text":"Montaj camere auto și dashcam, reparații GPS și actualizări de hărți pentru camion, service PC și laptop, și montaj de camere de supraveghere Wi-Fi și IP."}}]}]}</script></head><body><header>
   <div class="wrap bar">
     <a class="logo" href="#top" aria-label="AXIOTECH, începutul paginii">
       <svg width="46" height="46" aria-hidden="true" viewBox="0 0 200 200"> <circle cx="100" cy="100" r="92" fill="#0f1d3a" fill-opacity=".55" stroke="#3a5ea6" stroke-width="3"></circle> <circle cx="100" cy="100" r="72" fill="none" stroke="#2c4a85" stroke-width="2.5"></circle> <g fill="#25d366"><circle cx="33" cy="62" r="7"></circle><circle cx="160" cy="46" r="7"></circle><circle cx="178" cy="122" r="7"></circle><circle cx="58" cy="164" r="7"></circle><circle cx="128" cy="32" r="5.5"></circle></g> <g fill="#f39a1e"><circle cx="24" cy="128" r="7"></circle><circle cx="146" cy="168" r="7"></circle><circle cx="66" cy="30" r="5.5"></circle></g> <g transform="translate(40 40)"> <g stroke="#f39a1e" stroke-width="6" stroke-linecap="round"><path d="M42 12v12M60 12v12M78 12v12M42 96v12M60 96v12M78 96v12M12 42h12M12 60h12M12 78h12M96 42h12M96 60h12M96 78h12"></path></g> <rect x="24" y="24" width="72" height="72" rx="13" fill="#f39a1e"></rect><rect x="32.5" y="32.5" width="55" height="55" rx="8" fill="#0f1d3a"></rect> <path d="M46 78 60 41l14 37M51 66h18" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path> <circle cx="78" cy="42" r="4" fill="#25d366"></circle> </g> </svg>
@@ -208,7 +291,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
     <nav aria-label="Navigare principală">
       <ul>
         <li class="hide-m"><a href="#top" id="nav-home" aria-current="page">Acasă</a></li>
-        <li><a href="servicii.html" id="nav-svc">Serviciile<span class="hide-sm"> mele</span></a></li>
+        <li><details class="dd" id="nav-svc"><summary>Serviciile<span class="hide-sm"> mele</span></summary><div class="dd-menu"><a href="montaj-camera-auto-brasov.html"><small>01 · Auto</small>Montaj camere auto</a><a href="reparatii-gps-harti-camion-brasov.html"><small>02 · Navigație</small>GPS și hărți camion</a><a href="service-pc-laptop-brasov.html"><small>03 · IT</small>Service PC și laptop</a><a href="camere-supraveghere-brasov.html"><small>04 · CCTV</small>Camere supraveghere</a><a class="all" href="servicii.html">Toate serviciile →</a></div></details></li>
         <li class="hide-m"><a href="#lucrari">Lucrări</a></li>
         <li class="hide-m"><a href="#cum">Cum funcționează</a></li>
         <li class="hide-m"><a href="#de-ce">De ce AXIOTECH</a></li>
@@ -254,6 +337,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
       </div>
     </div>
   </section>
+  <nav class="quick" aria-label="Alege serviciul"><div class="wrap"><a href="montaj-camera-auto-brasov.html"><small>01 · Auto</small><b>Montaj camere auto</b><span>Dashcam cu cabluri ascunse</span></a><a href="reparatii-gps-harti-camion-brasov.html"><small>02 · Navigație</small><b>GPS și hărți camion</b><span>Hărți iGO 2026 · GPS de vânzare</span></a><a href="service-pc-laptop-brasov.html"><small>03 · IT</small><b>Service PC și laptop</b><span>Curățare, SSD, Windows</span></a><a href="camere-supraveghere-brasov.html"><small>04 · CCTV</small><b>Camere supraveghere</b><span>Wi-Fi și IP, pe telefon</span></a></div></nav>
 
   <section class="block" id="servicii">
     <div class="wrap">
@@ -276,6 +360,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
             <li>Configurare și asistență pentru aplicația de pe telefon.</li>
           </ul>
           <div class="svc-foot">Alimentare: 12V / 24V · adaptor OBD · mod parcare</div>
+        <a class="svc-more" href="montaj-camera-auto-brasov.html">Detalii despre montaj camere auto →</a>
         </article>
         <article class="svc">
           <div class="svc-top"><span>Serviciul 02</span><b>Navigație</b></div>
@@ -290,6 +375,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
             <li>Verificare recepție sateliți după reparație.</li>
           </ul>
           <div class="svc-foot">Profil camion: gabarit, tonaj, restricții de drum</div>
+        <a class="svc-more" href="reparatii-gps-harti-camion-brasov.html">Detalii despre reparații gps și hărți camion →</a>
         </article>
         <article class="svc">
           <div class="svc-top"><span>Serviciul 03</span><b>IT</b></div>
@@ -304,9 +390,26 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
             <li>Upgrade componente: SSD și memorie RAM.</li>
           </ul>
           <div class="svc-foot">Verificare temperaturi CPU/GPU înainte și după</div>
+        <a class="svc-more" href="service-pc-laptop-brasov.html">Detalii despre service pc și laptop →</a>
         </article>
       </div>
-      <div class="more"><a class="btn btn-line" href="servicii.html">Vezi toate serviciile, inclusiv supraveghere video CCTV →</a></div>
+      <div class="more" style="gap:12px;flex-wrap:wrap"><a class="btn btn-line" href="servicii.html">Vezi toate serviciile →</a><a class="btn btn-line" href="camere-supraveghere-brasov.html">Montaj camere de supraveghere →</a></div>
+    </div>
+  </section>
+
+  <section class="block" id="gps-vanzare" style="padding-top:0">
+    <div class="wrap">
+      <div class="head"><div class="eyebrow">GPS-uri de vânzare</div><h2>GPS camion cu hărți Europa 2026, gata de drum</h2><p>Navigații noi, cu hărțile full Europa iGO 2026 instalate și testate de noi. Le poți folosi pe camion, autoturism, autobuz sau rulotă.</p></div>
+      <div class="shop"><article class="prod">
+          <div class="prod-img"><span class="prod-badge">Cu hărți 2026</span><svg viewBox="0 0 340 230" role="img" aria-label="GPS 9 inch cu parasolar, cu hărți iGO pentru camion pe ecran"><defs><clipPath id="scr9"><rect x="34" y="54" width="272" height="152" rx="6"/></clipPath></defs><rect x="38" y="6" width="264" height="40" rx="8" fill="#0a1222"/><path d="M38 40h264l-10 20H48z" fill="#111b31"/><rect x="20" y="40" width="300" height="180" rx="16" fill="#0b1324" stroke="#2c4a85" stroke-width="2"/><rect x="34" y="54" width="272" height="152" rx="6" fill="#16284d"/><image href="gps-ecran-harti-igo-2026.webp" x="34" y="54" width="272" height="152" preserveAspectRatio="xMaxYMid slice" clip-path="url(#scr9)"/><rect x="34" y="54" width="272" height="152" rx="6" fill="none" stroke="#000" stroke-opacity=".5" stroke-width="2"/><rect x="262" y="214" width="44" height="0"/></svg></div>
+          <div class="prod-body"><h3>GPS camion 9 inch cu parasolar</h3><ul><li>Ecran 9 inch cu parasolar</li><li>Hărți full Europa iGO 2026, instalate de noi</li><li>Profiluri: camion, turism, autobuz, caravană</li><li>Procesor 800 MHz · 512 MB DDR · 16 GB memorie internă</li><li>FM transmitter: sunetul pe boxele mașinii</li></ul></div>
+          <div class="prod-foot"><span class="price">750<small>lei</small></span><a class="btn btn-wa" href="https://wa.me/40750271425?text=Bun%C4%83%20ziua%21%20A%C8%99%20dori%20s%C4%83%20cump%C4%83r%3A%20GPS%209%20inch%20cu%20parasolar%2C%20h%C4%83r%C8%9Bi%20full%20Europa%20iGO%202026%20%28camion%2C%20turism%2C%20autobuz%2C%20caravan%C4%83%29%20%E2%80%93%20750%20lei." target="_blank" rel="noopener">Cumpără pe WhatsApp</a></div>
+        </article><article class="prod">
+          <div class="prod-img"><span class="prod-badge">Cu hărți 2026</span><svg viewBox="0 0 340 230" role="img" aria-label="GPS 7 inch cu parasolar, cu hărți iGO pentru camion pe ecran"><defs><clipPath id="scr7"><rect x="34" y="54" width="272" height="152" rx="6"/></clipPath></defs><rect x="38" y="6" width="264" height="40" rx="8" fill="#0a1222"/><path d="M38 40h264l-10 20H48z" fill="#111b31"/><rect x="20" y="40" width="300" height="180" rx="16" fill="#0b1324" stroke="#2c4a85" stroke-width="2"/><rect x="34" y="54" width="272" height="152" rx="6" fill="#16284d"/><image href="gps-ecran-harti-igo-2026.webp" x="34" y="54" width="272" height="152" preserveAspectRatio="xMaxYMid slice" clip-path="url(#scr7)"/><rect x="34" y="54" width="272" height="152" rx="6" fill="none" stroke="#000" stroke-opacity=".5" stroke-width="2"/><rect x="262" y="214" width="44" height="0"/></svg></div>
+          <div class="prod-body"><h3>GPS camion 7 inch cu parasolar</h3><ul><li>Ecran 7 inch cu parasolar</li><li>Hărți full Europa iGO 2026, instalate de noi</li><li>Profiluri: camion, turism, autobuz, caravană</li><li>Procesor 800 MHz · 512 MB DDR · 16 GB memorie internă</li><li>FM transmitter: sunetul pe boxele mașinii</li></ul></div>
+          <div class="prod-foot"><span class="price">650<small>lei</small></span><a class="btn btn-wa" href="https://wa.me/40750271425?text=Bun%C4%83%20ziua%21%20A%C8%99%20dori%20s%C4%83%20cump%C4%83r%3A%20GPS%207%20inch%20cu%20parasolar%2C%20h%C4%83r%C8%9Bi%20full%20Europa%20iGO%202026%20%28camion%2C%20turism%2C%20autobuz%2C%20caravan%C4%83%29%20%E2%80%93%20650%20lei." target="_blank" rel="noopener">Cumpără pe WhatsApp</a></div>
+        </article></div>
+      <p class="shop-note">Apeși „Cumpără pe WhatsApp” și ne trimiți mesajul gata completat cu modelul și prețul. Detaliile de plată și predare le stabilim pe WhatsApp.</p><div class="more"><a class="btn btn-line" href="reparatii-gps-harti-camion-brasov.html#gps-vanzare">Detalii despre GPS-uri și hărți camion →</a></div>
     </div>
   </section>
 
@@ -381,6 +484,29 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
       </div>
     </div>
   </section>
+  <section class="block" id="recenzii">
+    <div class="wrap">
+      <div class="reviews">
+        <div>
+          <div class="stars" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg></div>
+          <div class="eyebrow">Recenzii Google · AXIOTECH Brașov</div>
+          <h2 style="margin-top:8px">Ce spun clienții pe Google</h2>
+          <p>Recenziile de pe profilul nostru de Google sunt scrise de clienți reali, după montaje și reparații. Citește ce au spus despre noi și, dacă am lucrat împreună, spune-ne și tu cum a fost.</p>
+        </div>
+        <div class="rev-actions">
+          <a class="btn btn-g" href="https://g.page/r/CSpU8OdIdIHFEBM" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.5 12.3c0-.8-.1-1.5-.2-2.2H12v4.2h5.9a5 5 0 0 1-2.2 3.3v2.7h3.6c2-1.9 3.2-4.7 3.2-8z"/><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.7l-3.6-2.7c-1 .7-2.2 1.1-3.7 1.1-2.9 0-5.3-1.9-6.2-4.5H2.1v2.8A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.8 14.2a6.6 6.6 0 0 1 0-4.3V7H2.1a11 11 0 0 0 0 9.9z"/><path fill="#EA4335" d="M12 5.4c1.6 0 3.1.6 4.2 1.7l3.2-3.2A11 11 0 0 0 2.1 7l3.7 2.9C6.7 7.3 9.1 5.4 12 5.4z"/></svg>Vezi recenziile pe Google</a>
+          <a class="btn btn-amber" href="https://g.page/r/CSpU8OdIdIHFEBM/review" target="_blank" rel="noopener">★ Lasă o recenzie pe Google</a>
+          <span class="note">Durează un minut. Recenzia ta îi ajută pe alți șoferi și clienți din Brașov să ne găsească.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="block" id="intrebari" style="padding-top:0">
+    <div class="wrap">
+      <div class="head"><div class="eyebrow">Întrebări frecvente</div><h2>Întrebări despre AXIOTECH</h2></div>
+      <div class="faq"><details><summary>Unde se află AXIOTECH și care e programul?</summary><p>AXIOTECH lucrează în Brașov, doar cu programare. Ne scrii pe WhatsApp sau ne suni la +40 750 271 425 și stabilim împreună ora.</p></details><details><summary>Cât costă evaluarea?</summary><p>Evaluarea este gratuită. Îți spunem ce trebuie făcut, cât durează și cât costă înainte să începem, fără obligații.</p></details><details><summary>Puteți aduce voi echipamentul?</summary><p>Da. Comandăm camera auto, GPS-ul, camerele de supraveghere sau componentele PC după modelul pe care îl vrei, sau te ajutăm să alegi. Apoi facem montajul. Poți aduce și echipamentul cumpărat de tine.</p></details><details><summary>Oferiți garanție?</summary><p>Da. La predare testăm împreună lucrarea și primești garanție pe manoperă.</p></details><details><summary>Ce servicii faceți?</summary><p>Montaj camere auto și dashcam, reparații GPS și actualizări de hărți pentru camion, service PC și laptop, și montaj de camere de supraveghere Wi-Fi și IP.</p></details></div>
+    </div>
+  </section>
  </div>
 
  
@@ -424,7 +550,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 </main>
 
 <footer>
-  <div class="wrap" style="align-items:center"><span>© 2026 AXIOTECH · Brașov<br>Camere auto · GPS · PC &amp; laptop · CCTV</span><div class="social-ft"><a class="soc-fb" href="https://www.facebook.com/profile.php?id=61571365679620" target="_blank" rel="noopener" aria-label="AXIOTECH pe Facebook"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.6 1.6-1.6h1.7V4.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1v2.4H7.7V14h2.7v8z"></path></svg></a><a class="soc-ig" href="https://www.instagram.com/constantin.v38/" target="_blank" rel="noopener" aria-label="AXIOTECH pe Instagram"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="2"></rect><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"></circle><circle cx="17.2" cy="6.8" r="1.3" fill="currentColor"></circle></svg></a><a class="soc-tt" href="https://www.tiktok.com/@constantin.cam.gps" target="_blank" rel="noopener" aria-label="AXIOTECH pe TikTok"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M16.6 3c.3 2.2 1.6 3.6 3.9 3.8v3.1a7 7 0 0 1-3.9-1.2v6.2a5.8 5.8 0 1 1-5-5.7v3.1a2.7 2.7 0 1 0 1.9 2.6V3z"></path></svg></a><a class="soc-th" href="https://www.threads.com/@constantin.v38" target="_blank" rel="noopener" aria-label="AXIOTECH pe Threads"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M16.5 11.2c-.4-2.6-2.2-3.7-4.3-3.7-2.3 0-3.7 1.4-3.9 2.9M15.4 11.3c-3.9-.4-6.6.5-6.4 2.6.2 1.7 2.4 2.3 4 1.8 2.3-.7 2.7-3.3 2.4-5.2M12.2 20.5c-4.6 0-8-3-8-8.5s3.4-8.5 8-8.5c3.6 0 6.2 1.8 7.3 5"></path><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M16.6 12.2c2.4 1.1 3.4 3.4 2.4 5.6-.9 1.9-3.3 2.8-6.8 2.7"></path></svg></a></div></div>
+  <div class="wrap" style="align-items:center"><nav class="ft-links" aria-label="Servicii"><a href="montaj-camera-auto-brasov.html">Montaj camere auto</a><a href="reparatii-gps-harti-camion-brasov.html">Reparații GPS și hărți camion</a><a href="service-pc-laptop-brasov.html">Service PC și laptop</a><a href="camere-supraveghere-brasov.html">Camere de supraveghere</a><a href="servicii.html">Toate serviciile</a></nav><span>© 2026 AXIOTECH · Brașov<br>Camere auto · GPS · PC &amp; laptop · CCTV</span><div class="social-ft"><a class="soc-fb" href="https://www.facebook.com/profile.php?id=61571365679620" target="_blank" rel="noopener" aria-label="AXIOTECH pe Facebook"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.6 1.6-1.6h1.7V4.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1v2.4H7.7V14h2.7v8z"></path></svg></a><a class="soc-ig" href="https://www.instagram.com/constantin.v38/" target="_blank" rel="noopener" aria-label="AXIOTECH pe Instagram"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="2"></rect><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"></circle><circle cx="17.2" cy="6.8" r="1.3" fill="currentColor"></circle></svg></a><a class="soc-tt" href="https://www.tiktok.com/@constantin.cam.gps" target="_blank" rel="noopener" aria-label="AXIOTECH pe TikTok"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M16.6 3c.3 2.2 1.6 3.6 3.9 3.8v3.1a7 7 0 0 1-3.9-1.2v6.2a5.8 5.8 0 1 1-5-5.7v3.1a2.7 2.7 0 1 0 1.9 2.6V3z"></path></svg></a><a class="soc-th" href="https://www.threads.com/@constantin.v38" target="_blank" rel="noopener" aria-label="AXIOTECH pe Threads"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M16.5 11.2c-.4-2.6-2.2-3.7-4.3-3.7-2.3 0-3.7 1.4-3.9 2.9M15.4 11.3c-3.9-.4-6.6.5-6.4 2.6.2 1.7 2.4 2.3 4 1.8 2.3-.7 2.7-3.3 2.4-5.2M12.2 20.5c-4.6 0-8-3-8-8.5s3.4-8.5 8-8.5c3.6 0 6.2 1.8 7.3 5"></path><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M16.6 12.2c2.4 1.1 3.4 3.4 2.4 5.6-.9 1.9-3.3 2.8-6.8 2.7"></path></svg></a></div></div>
 </footer>
 
 
@@ -458,4 +584,4 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
     lb.addEventListener('click',function(e){if(e.target===lb) lb.close()});
   }
 })();
-</script></body></html>
+</script><script>(function(){var d=document.getElementById("nav-svc");if(!d)return;document.addEventListener("click",function(e){if(d.open&&!d.contains(e.target))d.open=false});document.addEventListener("keydown",function(e){if(e.key==="Escape"&&d.open){d.open=false;d.querySelector("summary").focus()}})})();</script></body></html>
